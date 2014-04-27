@@ -1,3 +1,7 @@
 # author: ravig463
 
-numbers = 
+numbers = range(1,101)
+
+for number in numbers:
+	if number % 3 == 0:
+		print number
