@@ -17,5 +17,3 @@ numbers = range(1,100)
 for number in numbers:
     t.forward(2)
 	t.left(10)
-
-    
