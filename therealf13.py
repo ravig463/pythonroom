@@ -1,21 +1,23 @@
 # author: ravig463
 
-total = 0
+years = range(1900, 2015)
+months = range(1, 13)
+count = 0
 
-date = 1
-month = 1
-year = 1900
-
-while year < 2015:
-	total = total + 1
-	if month == 12 and date == 31:
-		year = year + 1
-		month = 1
-		date = 1
-		
-		
-	
-	else:
-		month = month + 1 
-	
-print total
+for y in years:
+	for m in months:
+		days = range(1, 32)
+		if m == 2:
+			days = range(1, 29)
+			if y % 4 == 0:
+				days = range(1, 30)
+			if y % 100 == 0:
+				days = range(1, 29)
+			if y % 400 == 0:
+				days = range(1, 30)
+			
+		if m == 4 or m == 6 or m == 9 or m == 11:
+			days = range(1, 31)		
+		for day in days:
+	   		count = count + 1
+print count                 
