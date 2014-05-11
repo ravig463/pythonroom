@@ -3,8 +3,11 @@
 import turtle
 t = turtle.Turtle() 
 
-numbers = range(1, 6)
+numbers = range(144, 200)
 
-for number in numbers:
-	t.forward(100)
-	t.left(144)
+for n in numbers:
+	t.forward(110)
+	t.left(n)
+	
+
+
