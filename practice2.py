@@ -1,31 +1,31 @@
 # author: ravig463
 
-import turtle 
+import turtle
 
 shape = input("What should I draw?")
-if shape == "square":
+
+
+def makeShape(sides):
 	t = turtle.Turtle()
-	t.forward(100)
-	t.left(90)
-	t.forward(100)
-	t.left(90)
-    t.forward(100)
-	t.left(90)
-	t.forward(100)
-	t.left(90)
-if shape == "triangle":
-	t = turtle.Turtle()
-	t.forward(100)
-	t.left(120)
-	t.forward(100)
-	t.left(120)
-	t.forward(100)
-	t.left(120)
-	
-if shape == "circle":
-	t = turtle.Turtle()
-	for n in range(1, 121):
+	for i in range(0, 90):
 		t.forward(3)
 		t.left(3)
 		
+def:
+	t = turtle.Turtle()
+	for i in range(4):
+		t.forward(100)
+		t.left(90)
+		
+if shape == "triangle":
+	t = turtle.Turtle()
+	for i in range(3):
+		t.forward(100)
+		t.left(120)
+		
+if shape == "pentagon":
+	t = turtle.Turtle()
+	for i in range(5):
+		t.forward(100)
+		t.left(72)
 	
